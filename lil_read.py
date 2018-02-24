@@ -9,9 +9,9 @@ from subprocess import call
 
 
 def decr():
-    text = input("\033[1mՏեղադրեք տեքստը այստեղ.\033[0;0m \n")
+    text = input("\033[1mՏեղադրեք տեքստը այստեղ.\nEnter the text to inverse:\033[0;0m \n")
 
-    print("\033[1mՎերծանված տեքստը.\033[0;0m\n", text[::-1])
+    print("\033[1mՎերծանված տեքստը.\nInversed text. Yay we can read what she has written!\033[0;0m\n", text[::-1])
 
 
 def main(stdscr):
@@ -44,9 +44,6 @@ def main(stdscr):
     time.sleep(1)
 
     win.refresh()
-
-    # Warten auf Tastendruck
-    # c = stdscr.getch()
 
     return width
 
